@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div style="background-color: #151718;">
+        <svg width="1400" height="1400">
+            <!--VERTICAL LINES -->
+            <line id="line01" x1="200" y1="100" x2="200" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line02" x1="250" y1="100" x2="250" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line03" x1="300" y1="100" x2="300" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line04" x1="350" y1="100" x2="350" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line05" x1="400" y1="100" x2="400" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line06" x1="450" y1="100" x2="450" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line07" x1="500" y1="100" x2="500" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line08" x1="550" y1="100" x2="550" y2="600" stroke="turquoise" stroke-width="2" />
+            <line id="line09" x1="200" y1="100" x2="200" y2="600" stroke="whitesmoke" stroke-width="1" />
+            <line id="line10" x1="250" y1="100" x2="250" y2="600" stroke="whitesmoke" stroke-width="1" />
+            <line id="line11" x1="300" y1="100" x2="300" y2="600" stroke="whitesmoke" stroke-width="1" />
+            <line id="line12" x1="350" y1="100" x2="350" y2="600" stroke="whitesmoke" stroke-width="1" />
+            <line id="line13" x1="400" y1="100" x2="400" y2="600"stroke="whitesmoke" stroke-width="1" />
+            <line id="line14" x1="450" y1="100" x2="450" y2="600"stroke="whitesmoke" stroke-width="1" />
+            <line id="line15" x1="500" y1="100" x2="500" y2="600"stroke="whitesmoke" stroke-width="1" />
+            <line id="line16" stroke="turquoise" stroke-width="2" />
+            <line id="line17" stroke="turquoise" stroke-width="2" />
+            <line id="line18" stroke="turquoise" stroke-width="2" />
+            <line id="line19" stroke="turquoise" stroke-width="2" />
+            <line id="line20" stroke="turquoise" stroke-width="2" />
+            <line id="line21" stroke="turquoise" stroke-width="2" />
+
+            <polygon id="my_poligon" points="185,600 215,600 200,625" style="fill:turquoise;stroke:turquoise;stroke-width:1" /> 
+
+
+
+
+
+        </svg>
+    </div>
+
+    <script>
+
+        //VERTICAL LINES 
+        let linha01 = document.querySelector('#line01');
+        let linha02 = document.querySelector('#line02');
+        let linha03 = document.querySelector("#line03");
+        let linha04 = document.querySelector('#line04');
+        let linha05 = document.querySelector('#line05');
+        let linha06 = document.querySelector('#line06');
+        let linha07 = document.querySelector('#line07');
+        let linha08 = document.querySelector('#line08');
+        let linha09 = document.querySelector('#line09');
+        let linha10 = document.querySelector('#line10');
+        let linha11 = document.querySelector('#line11');
+        let linha12 = document.querySelector('#line12');
+        let linha13 = document.querySelector('#line13');
+        let linha14 = document.querySelector('#line14');
+        let linha15 = document.querySelector('#line15');
+        let linha16 = document.querySelector('#line16');
+        let linha17 = document.querySelector('#line17');
+        let linha18 = document.querySelector('#line18');
+        let linha19 = document.querySelector('#line19');
+        let linha20 = document.querySelector('#line20');
+        let linha21 = document.querySelector('#line21');
+        let poligono = document.querySelector('#my_poligon');
+
+
+
+
+
+
+        console.log(linha01);
+        console.log(linha02);
+
+        
+        setTimeout( () =>{
+            linha01.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha02.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha03.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha04.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha05.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha06.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha07.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            linha08.setAttribute('transform', 'matrix(0 1 1 0 0 1)');
+            poligono.setAttribute('transform','matrix(0 1 1 0 0 1)');
+        },2000)
+
+
+
+
+    </script>
+
+    <style>
+        #line01{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line02{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line03{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line04{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line05{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line06{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line07{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #line08{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+        #my_poligon{
+            transition: all;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+        }
+    </style>
+</body>
+
+</html>

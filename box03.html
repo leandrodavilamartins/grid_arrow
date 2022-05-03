@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body style="background-color: #151718;">
+
+    <style>
+        #my_rect01{
+            transition: all;
+            transform-origin: left top;
+            transition-duration: 2s ;
+        }
+        #my_rect02{
+            transition: all;
+            transform-origin: left top;
+            transition-duration: 2s ;
+        }
+    </style>
+
+    <div>
+        <svg width="600" height="700">
+              <defs>
+                <radialGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:white;stop-opacity:1" />
+                <stop offset="100%" style="stop-color: turquoise;stop-opacity:1" />
+                </radialGradient>
+            </defs>
+            <rect id="my_rect01" width="100" height="100" fill="url(#grad1)" x="200" y="200" />
+            <!-- <rect id="my_rect02" width="100" height="100" fill="url(#grad1)" x="250" y="250" /> -->
+
+        </svg>
+    </div>
+
+    <script>
+        let retangulo01 = document.querySelector("#my_rect01");
+        //let retangulo02 = document.querySelector("#my_rect02");
+
+
+        console.log(retangulo01);
+
+        //counter = 0;
+
+        // ROTATION WITH ATTRIBUTES 
+        // setInterval( () => {
+        //     retangulo.setAttribute('transform', `rotate(${counter},200,200)`);
+        //     counter+=1;
+        // },10)
+
+/*         setTimeout(()=>{
+            retangulo.setAttribute('transform', 'matrix(3 1 -1 3 30 40)')
+        },2000); */
+
+        setTimeout(()=>{
+            retangulo01.setAttribute('transform', 'matrix(1 1 0 1 0 0)');
+            //retangulo02.setAttribute('transform', 'matrix(1 1 0 1 0 0)');
+
+        },2000);
+
+    </script>
+
+</body>
+</html>
